@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html lang="ja"> 
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+		<title>jQuery.event.mousestop.js sample</title>
+	</head> 
+	<body>
+		<div id="target" style="width:100px;height:100px;background-color:#ff9900;position:absolute;"></div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./jquery.event.mousestop.js"></script>
+		<script type="text/javascript">
+			$(function(){
+					$("#target").mousedragstop(function(){
+						var date = new Date();
+						$(this).text("stop!"+date.getMilliseconds())});
+			});
+		</script>
+	</body>
+</html>
+
