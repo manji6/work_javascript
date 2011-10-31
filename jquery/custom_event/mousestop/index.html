@@ -10,7 +10,9 @@
 		<script type="text/javascript" src="./jquery.event.mousestop.js"></script>
 		<script type="text/javascript">
 			$(function(){
-				$("#target").mousedragstop(function(){console.log("stop!")});
+					$("#target").mousedragstop(function(){
+						var date = new Date();
+						$(this).text("stop!"+date.getMilliseconds())});
 			});
 		</script>
 	</body>
