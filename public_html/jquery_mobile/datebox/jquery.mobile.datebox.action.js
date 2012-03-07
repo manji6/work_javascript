@@ -4,8 +4,12 @@ jQuery.extend(jQuery.mobile.datebox.prototype.options, {
 	'headerFormat': 'YYYY年 mm月 dd日'
 });
 
-$(function(){
+jQuery.extend(jQuery.mobile.selectmenu.prototype.options, {
+	'nativeMenu': false
+});
 
+
+$(function(){
 
 	// [Event]
 	// 出発日のカレンダーを選ぶと泊数のselectboxにfocusを当てる
