@@ -19,8 +19,19 @@
 				<h1>出発日・日数選択</h1>
 			</div>
 			<div data-role="content">
-				<input name="mydate" id="mydate" type="hidden" data-role="datebox"
-				data-options='{"mode": "calbox","useInline": true}'>
+<div data-role="fieldcontain">
+				<input name="mydate" id="mydate" type="text" data-role="datebox"
+				data-options='{"mode": "calbox","useInline": true,"pickPageButtonTheme": "c","pickPageTodayButtonTheme": "b"}'>
+			</div>
+<div data-role="fieldcontain">
+	<label for="select-choice-1" class="select">日数:</label>
+	<select name="select-choice-1" id="select-choice-1">
+		<option value="standard">Standard: 7 day</option>
+		<option value="rush">Rush: 3 days</option>
+		<option value="express">Express: next day</option>
+		<option value="overnight">Overnight</option>
+	</select>
+</div>
 
 			</div>
 
