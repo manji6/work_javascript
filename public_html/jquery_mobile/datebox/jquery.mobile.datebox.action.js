@@ -14,7 +14,7 @@ $(function(){
 			e.stopImmediatePropagation();
 			//DO SOMETHING//
 			console.log("setしますた");
-			setTimeout('$("#stay").selectmenu('open');',300);
+			setTimeout(function(){$("#stay").selectmenu('open');},300);
 		}
 	});
 });
