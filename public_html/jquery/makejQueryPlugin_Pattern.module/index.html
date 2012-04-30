@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="./sample.jQuery.plugin-module.js"></script>
+		<script>
+			$(function(){
+				var hoge = new Plugin;
+				hoge.init(    {
+					/* custom options */
+					id : 'vid01',
+					name : 'Video 1',
+					url : 'http://www.youtube.com/embed/dXo0LextZTU?rel=0'
+				});
+
+				var fuga = new Plugin;
+				fuga.init({
+					/* custom options */
+					id : 'vid02',
+					name : 'Video 2',
+					url : 'http://www.youtube.com/embed/nPMAUW-4lNY?rel=0'
+				});
+
+				fuga.method1();
+				fuga.method2();
+
+				hoge.method1();
+				hoge.method2();
+
+				fuga.run();
+				hoge.run();
+
+			});
+		</script>
+	</head>
+	<body>
+		出たなこの野郎。
+		<div id="vid01"></div>
+		<div id="vid02"></div>
+	</body>
+</html>
