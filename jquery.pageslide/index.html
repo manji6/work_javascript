@@ -16,5 +16,12 @@
     <li><a href="#">content3</a></li>
 </ul>
 <script type="text/javascript" src="./jquery.pageslide.js"></script>
+<script>
+	/* Default pageslide, moves to the right */
+	$(".first").pageslide();
+
+	/* Slide to the left, and make it model (you'll have to call $.pageslide.close() to close) */
+	$(".second").pageslide({ direction: "left", modal: true });
+</script>
 </body>
 </html>
