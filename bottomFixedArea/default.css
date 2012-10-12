@@ -1,0 +1,43 @@
+body{
+	background-color: #f0f0f0;
+}
+
+#Area_BottomFixed{
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	bottom: 0px;
+	left: 0;
+}
+
+#Area_BottomFixed .button {
+	position:fixed;
+	right: 0px;
+	bottom: 0px;
+	width: 50px;
+	text-align: center;
+	height: 25px;
+	padding-top: 5px;
+	background: #4d7315;
+	color: #eee;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#Area_BottomFixed .content {
+	padding: 5px;
+	color: #fff;
+	height: 25px;
+	background-color: #4d7315;
+}
+
+#Area_BottomFixed div.sample_Img{
+	display: block;
+	position: fixed;
+	float: left;
+	width: 100px;
+	left: 140px;
+	height: 140px;
+	bottom: 0px;
+	background-color: #ffcc00;
+}

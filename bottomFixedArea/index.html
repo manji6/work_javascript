@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>下部固定領域の設置サンプル</title>
+	  <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+	  <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+	  <!--[if IE]>
+	    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection" />
+	  <![endif]-->
+	  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="./default.css">
+</head>
+<body>
+	<div class="container showgrid">
+		<div class="contents　span-24">
+			文章
+		</div>
+	</div>
+
+	<!-- 下部固定コンテンツ -->
+	<!--
+	#Area_BottomFixedは固定
+	div.Act_ChangeBottomFixed を書いたblock要素がスライドUP＋Down
+	-->
+	<div id="Area_BottomFixed">
+	  <!-- 操作エリア部分 -->
+	  <div class="Act_ChangeBottomFixed button">
+	  	<img src="./images/arrow01.png" alt="">
+	  </div>
+
+	  <div class="Area_BottomFixedContents content">
+	  	ここ表示要素
+	  </div> 
+	  <div class="Area_BottomFixedContents sample_Img">
+	  	画像をイメージして・・・
+	  </div> 
+
+	</div>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="./action.js"></script>
+</body>
+</html>
